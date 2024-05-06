@@ -4,21 +4,25 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="with=device-with, initial-scale=1.0" />
         <title>Mi primer Sitio Web</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="./style.css">
     </Head>    
     <body>
         <header>
-            <h1>Título princial de la página</h1>
-            <h2>Pie de título</h2>
+            <Div id="títulos">
+                <h1 class="title" id="titulo-principal">Título princial de la página</h1>
+                <h2 class="title">Pie de título</h2>
+            </Div>
         </header>
         <hr>
         <main>
             <section>
-                <h3>Primera sección con párrafo de ejemplo</h3>
+                <h3 class="title">Primera sección con párrafo de ejemplo</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, minus fugiat officiis voluptatum impedit neque consectetur explicabo debitis quod omnis? Impedit voluptas voluptatum quaerat quo, ducimus sint alias rem beatae!</p>
             </section>
             <hr>
             <section>
-                <h3>Segunda sección con listas de ejemplos</h3>
+                <h3 class="title">Segunda sección con listas de ejemplos</h3>
                 <div>
                     <ol>
                         <li>Lista</li>
@@ -38,8 +42,21 @@
             </section>
             <hr>
             <Section>
-                <h3>Tercera sección con imagen de ejemplo</h3>
-                <img src="./Pomarola.jpg" alt="Pomimimi">
+                <h3 class="title">Tercera sección con imagen de ejemplo</h3>
+                <div class="contenedor-fotos">
+                    <div class="fotos">
+                        <h4 class="title">Pomimimi</h4>
+                        <img src="./Pomarola.jpg" alt="Pomimimi" class="fotopipis">
+                    </div>
+                    <div class="fotos">
+                        <h4 class="title">Filetoto</h4>
+                        <img src="./Fileto.jpeg" alt="Filetoto" class="fotopipis">
+                    </div>
+                    <div class="fotos">
+                        <h4 class="title">Ed...ward</h4>
+                        <img src="Nina.png" alt="Nina" class="fotopipis">
+                    </div>
+                </div>
             </Section>
         </main>
         <hr>

@@ -1,0 +1,54 @@
+body{
+    background-color: grey;
+}
+
+.title{
+/*     background-color: black;
+ */    color: white;
+    font-size: 1.5em ;
+}
+
+#titulo-principal{
+    color: red;
+    font-size: 3em;
+}
+
+.pie-principal{
+    color: red;
+    margin: auto;    
+}
+
+.fotos{
+    border: 2px solid black;
+    width: fit-content;
+    padding: 0px 1em 1em 1em;
+    border-radius: 10%;
+    transition: 1s;
+}
+
+.fotos:hover{
+    background-color: rgb(221, 124, 124);
+}
+
+.fotopipis{
+    width: 10em ;
+    
+}
+
+#títulos{
+    border: 2px solid black;
+    width: 65vw;
+    margin: auto;
+    padding: 3em;
+}
+
+.contenedor-fotos{
+    background-color: blue;
+    width: 85vw;
+    margin: auto;
+    margin-top: 1.5em;
+    border: 2px solid blueviolet;
+    border-radius: 5%;
+    padding: 2em;
+    display: flex;
+}
