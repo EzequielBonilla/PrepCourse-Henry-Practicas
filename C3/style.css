@@ -9,21 +9,26 @@ body{
 }
 
 #titulo-principal{
-    color: red;
+    color: rgb(214, 167, 167);
     font-size: 3em;
 }
 
 .pie-principal{
-    color: red;
+    color: rgb(196, 196, 196);
     margin: auto;    
 }
 
 .fotos{
     border: 2px solid black;
     width: fit-content;
-    padding: 0px 1em 1em 1em;
+    padding: 1em 1em 2em 1em;
     border-radius: 10%;
     transition: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
 }
 
 .fotos:hover{
@@ -32,23 +37,32 @@ body{
 
 .fotopipis{
     width: 10em ;
+    height: auto;
     
 }
 
 #títulos{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 65vw;
     margin: auto;
     padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contenedor-fotos{
-    background-color: blue;
+/*     background-color: blue; */
     width: 85vw;
     margin: auto;
     margin-top: 1.5em;
-    border: 2px solid blueviolet;
-    border-radius: 5%;
+    border: 5px solid blueviolet;
+    border-radius: 15px;
     padding: 2em;
     display: flex;
+    justify-content: space-evenly;
 }
+
+/* .fotos > .title{
+    text-align: center;
+} */
