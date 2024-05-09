@@ -1,5 +1,6 @@
 
-// switch buscha expresión/argumento correspondiente entre los case ofrecidos, y lo resuelve hasta encontrar un break. si no encuentra nada, resuelve en default. si no hay default, saltea el switch
+// switch buscha expresión/argumento correspondiente entre los case ofrecidos, y lo resuelve hasta encontrar un break.
+//si no encuentra nada, resuelve en default. si no hay default, saltea el switch
 expr = "Uvas"
 
 switch (expr) {
