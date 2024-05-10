@@ -1,4 +1,4 @@
-var suma = 0;
+/* var suma = 0; */
 /* suma = suma +1
 suma = suma +2
 suma = suma +3
@@ -16,9 +16,42 @@ console.log(suma) */
     suma = suma +i;
     console.log("Variable i: " + i);
     console.log("Variable suma: " + suma);
-} */ //igual al anterior, pero incluye el resultado actual de forn tomando el último resultado de suma
+} */ //igual al anterior, pero incluye el resultado actual de for tomando el último resultado de suma
 
-while(suma<3) {
+/* while(suma<5) {
     suma=suma+1
     console.log(suma)
+} */
+
+/* i=0
+do {
+    i += 1;
+    console.log(i);
+  } while (i < 5); */
+
+/* var result = "resultado";
+var i = 0;
+
+do {
+  i = i + 1;
+  result = result + 1;
+} while (i < 5);
+
+console.log(i);
+console.log(result);
+ */
+  
+let numeroSecreto = Math.floor(Math.random() * 10) + 1; // Generar un número aleatorio entre 1 y 10
+let intentos = 0;
+let respuesta;
+
+while (respuesta !== numeroSecreto) {
+    respuesta = 3 //parseInt(prompt("Adivina el número (entre 1 y 10):"));
+    intentos++;
+
+    if (respuesta === numeroSecreto) {
+        console.log(`¡Correcto! El número secreto era ${numeroSecreto}. Has necesitado ${intentos} intentos.`);
+    } else {
+        console.log("Incorrecto. Intenta de nuevo.");
+    }
 }
