@@ -10,7 +10,7 @@ console.log(suma) */
 /* for(var i=0; i<10; i++){
     suma = suma +1
     console.log(suma)
-} */ //repite la formula segun el for, escalando el último resultado
+} */ //repite la formula segun el for, escalando el último resultado sabiendo la cantidad de pasos/iteraciones
 
 /* for(var i=0; i<5; i++){
     suma = suma +i;
@@ -22,6 +22,7 @@ console.log(suma) */
     suma=suma+1
     console.log(suma)
 } */
+// repite la formila escalando resultado pero sabieendo solo el limite, no la cantidad de rondas
 
 /* i=0
 do {
@@ -40,13 +41,16 @@ do {
 console.log(i);
 console.log(result);
  */
+
+//do while es igual a while pero imprime al menos un resultado. Por ejeplo passwords logins
   
-let numeroSecreto = Math.floor(Math.random() * 10) + 1; // Generar un número aleatorio entre 1 y 10
+/* let numeroSecreto = Math.floor(Math.random() * 10) + 1; // Generar un número aleatorio entre 1 y 10
 let intentos = 0;
 let respuesta;
 
 while (respuesta !== numeroSecreto) {
-    respuesta = 3 //parseInt(prompt("Adivina el número (entre 1 y 10):"));
+    respuesta = parseInt(prompt("Adivina el número (entre 1 y 10):"));
+    // while solo corre  una iteracion con cada prompt y espera el proximo
     intentos++;
 
     if (respuesta === numeroSecreto) {
@@ -55,3 +59,57 @@ while (respuesta !== numeroSecreto) {
         console.log("Incorrecto. Intenta de nuevo.");
     }
 }
+ */
+
+/* i = 0;
+n = 0;
+while (i < 5) {
+  i++;
+  if (i == 3) {
+    continue;
+  }
+  n += i;
+
+  console.log("Var i" + i)
+  console.log ("var n" + n)
+} */
+// continue hace que corra la siguiente iteracion de un buble antes de seguir
+// por ejemplo acá se saltea n+=i cuando i es igual a 3
+
+i = 0
+j = 20
+
+/* checkiandj: while (i < 4) {
+    console.log("i" + i + "<br>");
+    i += 1;
+  
+    checkj: while (j > 4) {
+        console.log("j" + j + "<br>");
+      j -= 1;
+      if (j % 2 == 0) continue checkj;
+      console.log("j" + j + " is odd.<br>");
+    }
+    console.log("i final = " + i + "<br>");
+    console.log("j final = " + j + "<br>");
+  } */
+  // este caso loopea checkea i y j, jta loppea hasta que se cumpla su falsedad y continua conn "i y j" saltando j por su falsedad
+
+
+/* function comprobarBreak(x) {
+  
+  var i = 0;
+  while (i < 6) {
+    if (i == 3) break;
+    i++;
+    console.log("varii " + i)
+  }
+  console.log("vari " + i)
+  console.log("varx " + x)
+  console.log("i*x " + (i * x))
+  return i * x;
+}
+comprobarBreak(2) */
+
+//si la condición de break se cumple, salta al siguiente paso (o el etiquetado)
+
+
