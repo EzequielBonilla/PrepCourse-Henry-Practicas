@@ -25,10 +25,24 @@
 // });
 // console.log(cumpleCondicion) //verifica si todos los elementos cumplen una condicion
 
-var palabra = "Henri";
-var palabraSeparada = palabra.split(""); //separa todos los caracteres o separa cada vez que encuentre lo que va entre comillas
-palabraSeparada.pop();
-palabraSeparada.push("y");
-var palabraArreglada = palabraSeparada.join("");
-console.log(palabraArreglada);
+// var palabra = "Henri";
+// var palabraSeparada = palabra.split(""); //separa todos los caracteres o separa cada vez que encuentre lo que va entre comillas
+// palabraSeparada.pop();
+// palabraSeparada.push("y");
+// var palabraArreglada = palabraSeparada.join("");
+// console.log(palabraArreglada);
  
+// var numeros = [1, 2, 3, 4];
+// // numeros.forEach(num => console.log(num));
+// numeros.forEach(num => {
+//     if (num === 3) {
+//         console.log(num);
+//     }
+// }); realiza alguna accion absandose en el arreglo, pero no lo cambia
+
+var numeros = [1, 2, 3, 4];
+var masUno = numeros.map(num => {
+    return num+1;
+});
+console.log(masUno)
+// con este metodo si se le pueden realizar cambios
