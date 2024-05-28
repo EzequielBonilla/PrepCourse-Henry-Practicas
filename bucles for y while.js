@@ -112,4 +112,20 @@ comprobarBreak(2) */
 
 //si la condición de break se cumple, salta al siguiente paso (o el etiquetado)
 
+//bucles for of
+
+const array = [1, 2, 3, 4, 5];
+for (const number of array) {
+  console.log(number);
+}
+// Salida: 1 2 3 4 5
+
+
+const string = "hello";
+for (const char of string) {
+  console.log(char);
+}
+// Salida: h e l l o
+
+
 

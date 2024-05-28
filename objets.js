@@ -48,3 +48,14 @@
 // };
 // diferenciaDeNotacioens("saludable", "noSaludable"); //solo cambia el parametro cuando uso bracket notation
 // console.log(comidas)
+
+var objeto = {};
+var string = ["a", "a", "a", "a", "b", "b", "b", "c", "c",]
+var i = 0
+var letra
+
+letra = string[i]
+objeto[letra] += 1
+
+console.log("letra " + letra)
+console.log(objeto);
